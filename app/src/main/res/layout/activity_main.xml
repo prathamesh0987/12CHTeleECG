@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/layoutPadding">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/barc"
+        android:contentDescription="@string/barc_logo"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/newEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:height="50dp"
+        android:text="@string/new_" />
+
+    <Button
+        android:id="@+id/loadData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:height="50dp"
+        android:text="@string/load" />
+
+    <Button
+        android:id="@+id/leads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:height="50dp"
+        android:text="@string/select_leads" />
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_back"
+    android:gravity="top"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/patientDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+		
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#800080" />
+
+            <!--<TextView
+                android:id="@+id/patientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patientName"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <EditText
+            android:id="@+id/chss_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/chssno"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="#800080"
+            android:textColorHint="#800080">
+        </EditText>
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/birthDate"
+        android:inputType="date" 
+        android:textColor="#800080"
+         android:textColorHint="#800080"/>
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <EditText
+            android:id="@+id/patientAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/patientAge"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#800080" />
+
+       
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+
+     <LinearLayout
+         android:id="@+id/heightLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+             <Spinner
+             android:id="@+id/spinner_height"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#800080" />
+
+                <TextView
+                    android:id="@+id/txtvw_ht"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#800080"
+                    android:text="@string/cm" />
+
+     </LinearLayout>
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+    <LinearLayout
+        android:id="@+id/weightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#800080" />
+
+        <TextView
+            android:id="@+id/txtvw_wt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#800080"
+            android:text="@string/kg" />
+
+    </LinearLayout>
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <EditText
+            android:id="@+id/txtMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/medications"
+            android:inputType="text"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+        <EditText
+            android:id="@+id/txtBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/bloodPressure"
+            android:inputType="date"
+            android:maxLength="15"
+            android:textColor="#800080"
+            android:textColorHint="#800080" />
+
+            <!--<TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="@string/save"
+            android:textColor="#800080" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:text="@string/clear"
+            android:textColor="#800080" />
+        
+         <Button
+             android:id="@+id/btnCancel"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.33"
+             android:text="@string/cancel"
+             android:textColor="#800080"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

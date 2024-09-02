@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_size">15sp</dimen>
+    <dimen name="font_size_xhigh">12dp</dimen>
+    <dimen name="font_size_xxhigh">10dp</dimen>
+    <dimen name="font_size_xxxhigh">6dp</dimen>
+    <dimen name="bt_listsize">210dp</dimen>
+    <dimen name="layoutPadding">15dp</dimen>
+</resources>
